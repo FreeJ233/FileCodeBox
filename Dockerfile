@@ -7,6 +7,7 @@ LABEL version="6"
 COPY . /app
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' >/etc/timezone
+RUN apt-get install gcc libffi-devel python3-devel openssl-devel -y
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 12345

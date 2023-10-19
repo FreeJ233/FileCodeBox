@@ -14,8 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      -
-        run: apt-get install gcc libffi-devel python3-devel openssl-devel
+    - name: 初始化环境
+      run: |
+        sudo -E apt-get -qq update
+        sudo -E apt-get install gcc libffi-devel python3-devel openssl-devel
+
       -
         name: Checkout
         uses: actions/checkout@v3

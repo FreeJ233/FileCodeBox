@@ -11,14 +11,8 @@ env:
 
 jobs:
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-
-      - name: 初始化环境
-        run: |
-         sudo -E apt-get -qq update
-         sudo -E apt-get install gcc libffi-devel python3-devel openssl-devel
-
       -
         name: Checkout
         uses: actions/checkout@v3

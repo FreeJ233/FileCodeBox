@@ -1,4 +1,5 @@
-FROM python:3.9.5-slim-buster
+#FROM python:3.9.5-slim-buster
+FROM python:3.9.5-buster
 LABEL author="Lan"
 LABEL email="vast@tom.com"
 LABEL version="6"

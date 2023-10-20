@@ -42,6 +42,7 @@ yarl==1.9.2
 packaging
 wheel
 setuptools
+git
 
 # fastai stuff
 fastcore==1.0.0

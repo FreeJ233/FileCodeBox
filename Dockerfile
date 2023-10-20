@@ -14,7 +14,7 @@ RUN echo 'Asia/Shanghai' >/etc/timezone
 #RUN apt-get update && apt-get install python3 python3-dev python3-yaml python3-pip python3-setuptools
 
 # reqs
-RUN apt-get install libatlas-base-dev openmpi-bin libopenblas-dev libblas-dev m4 cmake cython python3-dev
+#RUN apt-get install libatlas-base-dev openmpi-bin libopenblas-dev libblas-dev m4 cmake cython python3-dev
 
 # torch
 RUN pip3 install https://github.com/radimspetlik/pytorch_rpi_builds/raw/master/torch-1.6.0a0%2B9d7a79a-cp37-cp37m-linux_armv7l.whl

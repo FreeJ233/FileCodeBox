@@ -5,7 +5,6 @@ LABEL version="6"
 
 
 COPY . /app
-RUN apt-get install -y llvm git
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' >/etc/timezone
 WORKDIR /app
